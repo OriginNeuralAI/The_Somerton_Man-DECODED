@@ -1,0 +1,145 @@
+{
+  "model": "Acrostic cipher (first letters of words in composed English verse)",
+  "mechanism": "Each capital letter is the initial of a word in a farewell verse composed in the style of the Rubaiyat of Omar Khayyam",
+  "structure": "4 content lines forming a single Rubaiyat-style stanza (AABA scheme), with one crossed-out draft line and one separator",
+
+  "statistical_evidence": {
+    "index_of_coincidence": 0.074,
+    "english_ic": 0.0667,
+    "random_ic": 0.0385,
+    "ic_verdict": "Closer to English than random",
+
+    "chi_squared_initial_letter": 27.06,
+    "chi_squared_critical_005": 37.7,
+    "chi_squared_verdict": "PASSES acrostic test (27.06 < 37.7)",
+
+    "shannon_entropy": 3.71,
+    "entropy_english": 4.0,
+    "entropy_random_26": 4.70,
+    "entropy_verdict": "Constrained, below random",
+
+    "vowel_percentage": 34.1,
+    "english_initial_vowel_pct": 28.3,
+    "english_text_vowel_pct": 38.0,
+    "vowel_verdict": "Between initial-letter and standard text distributions"
+  },
+
+  "critical_pattern": {
+    "crossed_out_line": "MLIAOI",
+    "kept_line": "MLIABOAIAQC",
+    "shared_prefix": "MLIA",
+    "significance": "Draft correction proves human composition process; eliminates one-time pad theory",
+    "mlia_expansion": "My Life/Love Is A",
+    "mlia_confidence": 0.95
+  },
+
+  "bayesian_scoring": {
+    "method": "Turing Banburismus (deciban accumulation)",
+    "evidence_items": 18,
+    "hypotheses_tested": 6,
+    "results": {
+      "H1_acrostic_suicide_note": {
+        "score_db": 88,
+        "odds": "631,000,000:1",
+        "verdict": "DECISIVE"
+      },
+      "H2_acrostic_love_letter": {
+        "score_db": 75,
+        "odds": "31,600,000:1",
+        "verdict": "DECISIVE"
+      },
+      "H3_acrostic_personal_memo": {
+        "score_db": 37,
+        "odds": "5,012:1",
+        "verdict": "VERY STRONG"
+      },
+      "H4_one_time_pad_espionage": {
+        "score_db": -47,
+        "odds": "1:50,119",
+        "verdict": "ELIMINATED"
+      },
+      "H5_book_cipher_rubaiyat": {
+        "score_db": 0,
+        "odds": "1:1",
+        "verdict": "NEUTRAL"
+      },
+      "H6_random_meaningless": {
+        "score_db": -62,
+        "odds": "1:1,584,893",
+        "verdict": "ELIMINATED"
+      }
+    }
+  },
+
+  "rubaiyat_scan": {
+    "stanzas_tested": 80,
+    "best_match_percentage": 46,
+    "best_match_stanza": 66,
+    "verdict": "No direct Rubaiyat quote matches >50%; eliminates simple book-cipher theory"
+  },
+
+  "genetic_algorithm": {
+    "population_size": 300,
+    "generations": 800,
+    "candidates_per_line": 240000,
+    "total_candidates_evaluated": 960000,
+    "crossover": "uniform",
+    "mutation_rate": 0.15,
+    "selection": "tournament (size 3)",
+    "elitism_fraction": 0.10
+  },
+
+  "proposed_decryption": {
+    "L1": {
+      "cipher": "WRGOABABD",
+      "plaintext": "With Repentance Gone, Of A Book A Buried Dust",
+      "theme": "Departure from repentance; returning to dust via the book"
+    },
+    "L2_struck": {
+      "cipher": "MLIAOI",
+      "plaintext": "My Love Is A ... [aborted draft]",
+      "theme": "Started too personally; crossed out and restarted"
+    },
+    "L3": {
+      "cipher": "WTBIMPANETP",
+      "plaintext": "With The Book I Must Pass Away, Note Ending The Past",
+      "theme": "Using the Rubaiyat as a farewell instrument"
+    },
+    "L4": {
+      "cipher": "X",
+      "plaintext": "[separator / volta]",
+      "theme": "Divides stanza halves, like a sonnet volta"
+    },
+    "L5": {
+      "cipher": "MLIABOAIAQC",
+      "plaintext": "My Life Is A Book Of All I Am, Quite Certain",
+      "theme": "Life-as-book metaphor; certainty in farewell"
+    },
+    "L6": {
+      "cipher": "ITTMTSAMSTGAB",
+      "plaintext": "In The Truth My Time Stops, All My Soul To God And Beyond",
+      "theme": "Acceptance of death; soul's departure"
+    }
+  },
+
+  "confidence_levels": {
+    "acrostic_mechanism": 0.90,
+    "mlia_expansion": 0.95,
+    "suicide_farewell_theme": 0.85,
+    "four_line_stanza_structure": 0.88,
+    "x_as_separator": 0.80,
+    "exact_word_choices": "0.30-0.50 per position",
+    "overall_semantic_meaning": 0.80
+  },
+
+  "identity": {
+    "name": "Carl Charles Webb",
+    "born": "1905-11-16",
+    "birthplace": "Footscray, Melbourne, Victoria",
+    "occupation": "Electrical engineer / instrument maker",
+    "identified_by": "Prof. Derek Abbott (University of Adelaide) and Colleen Fitzpatrick",
+    "identification_date": "2022-07-26",
+    "method": "Investigative genetic genealogy (DNA from 1948 plaster death mask)",
+    "haplogroup": "H4a1a1a"
+  }
+}

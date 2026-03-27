@@ -1,0 +1,70 @@
+{
+  "name": "Tamam Shud Cipher",
+  "alias": "Somerton Man Code",
+  "discovery_date": "1948-12-01",
+  "discovery_location": "Back cover of Rubaiyat of Omar Khayyam (1941 Whitcombe & Tombs edition)",
+  "detection_method": "Infrared photography of faint pencil indentations",
+  "connected_to": "Unknown man (later identified as Carl Webb) found dead at Somerton Park beach, Adelaide, South Australia",
+
+  "lines": {
+    "L1": {
+      "text": "WRGOABABD",
+      "length": 9,
+      "status": "active"
+    },
+    "L2": {
+      "text": "MLIAOI",
+      "length": 6,
+      "status": "crossed_out",
+      "note": "Struck through by writer; shares MLIA prefix with L5"
+    },
+    "L3": {
+      "text": "WTBIMPANETP",
+      "length": 11,
+      "status": "active"
+    },
+    "L4": {
+      "text": "X",
+      "length": 1,
+      "status": "separator",
+      "note": "Single letter on its own line; likely a volta/separator between stanza halves"
+    },
+    "L5": {
+      "text": "MLIABOAIAQC",
+      "length": 11,
+      "status": "active"
+    },
+    "L6": {
+      "text": "ITTMTSAMSTGAB",
+      "length": 13,
+      "status": "active"
+    }
+  },
+
+  "full_text_all": "WRGOABABDMLIAOIWTBIMPANETPXMLIABOAIAQCITTMTSAMSTGAB",
+  "full_text_active": "WRGOABABDWTBIMPANETPXMLIABOAIAQCITTMTSAMSTGAB",
+  "full_text_content": "WRGOABABDWTBIMPANETPMLIABOAIAQCITTMTSAMSTGAB",
+
+  "total_characters_all": 51,
+  "total_characters_active": 45,
+  "total_characters_content": 44,
+  "distinct_letters": 18,
+
+  "notes": [
+    "First letter of L1 debated as W or M (W most accepted)",
+    "L2 is crossed out; appears to be a draft of L5",
+    "An X mark may also appear above the last O in L5 in some readings",
+    "All letters are uppercase capitals",
+    "Revealed by infrared photography of pencil indentations on book cover"
+  ],
+
+  "edition": {
+    "book": "Rubaiyat of Omar Khayyam",
+    "translator": "Edward FitzGerald",
+    "edition": "5th (1889 text)",
+    "publisher": "Whitcombe & Tombs",
+    "year": 1941,
+    "origin": "New Zealand",
+    "note": "Rare wartime edition; last page torn out (Tamam Shud slip found on body)"
+  }
+}

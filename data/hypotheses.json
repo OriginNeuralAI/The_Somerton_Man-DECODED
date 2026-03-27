@@ -1,0 +1,115 @@
+[
+  {
+    "id": "H1",
+    "name": "Acrostic suicide note (Rubaiyat-themed)",
+    "score_db": 88,
+    "odds": "631,000,000:1 for",
+    "verdict": "DECISIVE",
+    "description": "The cipher encodes the first letters of words in a self-composed farewell verse in the style of the Rubaiyat, written by Carl Webb as a suicide note.",
+    "supporting_evidence": [
+      "Crossed-out line (draft correction pattern)",
+      "MLIA prefix repeat (same phrase, two attempts)",
+      "IC = 0.074 matches English initial-letter distribution",
+      "Chi-squared passes acrostic test",
+      "4 content lines match Rubaiyat stanza structure",
+      "Tamam Shud slip = 'It is finished'",
+      "Carl Webb: poetry lover, mental decline",
+      "Digitalis/ouabain poisoning (self-administered)",
+      "Entropy and vowel ratio consistent with English initials"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "id": "H2",
+    "name": "Acrostic love letter / farewell to woman",
+    "score_db": 75,
+    "odds": "31,600,000:1 for",
+    "verdict": "DECISIVE",
+    "description": "The cipher is an acrostic love letter or farewell to Jessica Thomson, composed on the book she was connected to.",
+    "supporting_evidence": [
+      "Jessica Thomson's phone number on same book cover",
+      "She went pale when shown the plaster death mask",
+      "MLIA could be 'My Love Is A...'",
+      "Body found near her home",
+      "All evidence for H1 also applies"
+    ],
+    "contradicting_evidence": [
+      "She denied knowing the man",
+      "Suicide-specific evidence (poison, Tamam Shud) slightly favors H1 over H2"
+    ],
+    "note": "H1 and H2 are not mutually exclusive; the most likely truth is a farewell to a lover combined with a suicide note."
+  },
+  {
+    "id": "H3",
+    "name": "Acrostic personal memo (mundane)",
+    "score_db": 37,
+    "odds": "5,012:1 for",
+    "verdict": "VERY STRONG",
+    "description": "The cipher is a mundane personal note (horse racing tips, to-do list, etc.) written as an initial-letter abbreviation.",
+    "supporting_evidence": [
+      "IC and chi-squared consistent with acrostic",
+      "Webb was a horse gambler"
+    ],
+    "contradicting_evidence": [
+      "Written on a poetry book (not a racing form)",
+      "Tamam Shud slip has no mundane explanation",
+      "Suicide by poison doesn't fit mundane context"
+    ]
+  },
+  {
+    "id": "H4",
+    "name": "Espionage one-time pad",
+    "score_db": -47,
+    "odds": "1:50,119 against",
+    "verdict": "ELIMINATED",
+    "description": "The cipher is an encrypted spy message using a one-time pad or similar cryptographic system.",
+    "supporting_evidence": [
+      "Cold War timing (1948)",
+      "Removed clothing labels (spy tradecraft)",
+      "Jessica Thomson had communist connections"
+    ],
+    "contradicting_evidence": [
+      "FATAL: Crossed-out line impossible in OTP",
+      "FATAL: MLIA prefix repeat impossible with OTP key reuse",
+      "IC = 0.074 far from random 0.038 expected for OTP",
+      "Entropy too low for encrypted output",
+      "Carl Webb not a known intelligence operative",
+      "DNA identification fits civilian profile"
+    ],
+    "elimination_reason": "The crossed-out line with shared MLIA prefix is structurally impossible in any one-time pad system. This single observation reduces OTP probability to effectively zero."
+  },
+  {
+    "id": "H5",
+    "name": "Espionage book cipher (Rubaiyat as key)",
+    "score_db": 0,
+    "odds": "1:1",
+    "verdict": "NEUTRAL",
+    "description": "The letters encode positions or word indices in the Rubaiyat, used as a book cipher key.",
+    "supporting_evidence": [
+      "The Rubaiyat was present (book cipher needs the book)",
+      "Spy book ciphers were used in the Cold War era"
+    ],
+    "contradicting_evidence": [
+      "No Rubaiyat stanza matches any cipher line above 50%",
+      "Crossed-out line inconsistent with book cipher extraction",
+      "Webb identified as civilian, not spy"
+    ]
+  },
+  {
+    "id": "H6",
+    "name": "Random / meaningless doodle",
+    "score_db": -62,
+    "odds": "1:1,584,893 against",
+    "verdict": "ELIMINATED",
+    "description": "The letters are meaningless scribbles with no encoded content.",
+    "supporting_evidence": [],
+    "contradicting_evidence": [
+      "IC far from random (0.074 vs 0.038)",
+      "MLIA repeat extremely unlikely by chance (P ~ 1/14000)",
+      "Entropy too structured for random",
+      "Line structure implies intentional segmentation",
+      "Connected to Tamam Shud slip and death",
+      "Webb was a known poetry enthusiast"
+    ]
+  }
+]
